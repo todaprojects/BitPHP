@@ -222,7 +222,7 @@ main .container section #quizBoard > div#buttons button#False:active:not(.disabl
 
 main .container section #quizBoard > div#result {
   text-align: center;
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0;
   margin-top: 64px;
   color: #e63946;
@@ -261,8 +261,7 @@ main .container table {
 main .container table th, main .container table td {
   width: 50%;
   border: 1px solid #333333;
-  height: 40px;
-  padding: 10px;
+  height: 24px;
 }
 
 /* Center the loader */
