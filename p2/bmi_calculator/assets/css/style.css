@@ -262,6 +262,7 @@ main .container table th, main .container table td {
   width: 50%;
   border: 1px solid #333333;
   height: 24px;
+  padding-left: 10px;
 }
 
 /* Center the loader */
