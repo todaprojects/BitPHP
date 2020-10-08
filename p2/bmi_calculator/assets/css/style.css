@@ -29,7 +29,6 @@ main .container {
 
 main .container section {
   position: relative;
-  border: 2px solid darkgrey;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,99 +156,12 @@ main .container section form {
   margin-top: 20px;
 }
 
-main .container section #quizBoard > div,
-main .container section #quizSelect > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 0;
-}
-
-main .container section #quizBoard > div#count {
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-main .container section #quizBoard > div#buttons {
-  font-size: 1.4rem;
-  margin-top: 2.2rem;
-  display: none;
-}
-
-main .container section #quizBoard > div#buttons button#True {
-  margin-top: 32px;
-  border-radius: 30px;
-  min-width: 140px;
-  max-width: 140px;
-  margin-right: 24px;
-  height: 4rem;
-  background-color: lightgreen;
-}
-
-main .container section #quizBoard > div#buttons button#True:active:not(.disabled) {
-  background-color: #7ded7d;
-  -webkit-transform: translateX(1px) translateY(1px);
-          transform: translateX(1px) translateY(1px);
-}
-
-main .container section #quizBoard > div#buttons button#False {
-  margin-top: 32px;
-  border-radius: 30px;
-  min-width: 140px;
-  max-width: 140px;
-  margin-left: 24px;
-  height: 4rem;
-  background-color: lightcoral;
-}
-
-main .container section #quizBoard > div#buttons button#False:active:not(.disabled) {
-  background-color: #ef6e6e;
-  -webkit-transform: translateX(1px) translateY(1px);
-          transform: translateX(1px) translateY(1px);
-}
-
-main .container section #quizBoard > div#result {
+main .container section div#result {
   text-align: center;
   font-size: 4rem;
   margin: 0;
   margin-top: 64px;
   color: #e63946;
-}
-
-main .container section #question {
-  max-width: 60%;
-  min-width: 260px;
-  height: 3.8rem;
-  margin: 0 20px;
-  padding: 0 40px;
-  font-size: 1.4rem;
-  text-align: center;
-  line-height: 1.6;
-}
-
-main .container section #question p {
-  margin: 0;
-}
-
-main .container section #question p span {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-main .container section #count {
-  font-size: 3rem;
 }
 
 main .container table {
@@ -266,76 +178,3 @@ main .container table th, main .container table td {
 }
 
 /* Center the loader */
-#loader {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #333333;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
