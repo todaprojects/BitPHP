@@ -53,6 +53,19 @@ print('<br><hr>');
 
 // ============ array_filter() ============ 
 // https://www.php.net/manual/en/function.array-filter.php
+print('<strong>1. Filter by key (<i>Country</i>) using "array_filter()":</strong><br>');
 
+$filterByName = 'Lithuania';
+print_r(array_filter($ceu, function($k) {
+    return $k == $GLOBALS['filterByName'];      // => variable scope: https://www.php.net/manual/en/language.variables.scope.php
+}, ARRAY_FILTER_USE_KEY));
 
+print('<br><br><strong>2. Filter by value (<i>City</i>) using "array_filter()":</strong><br>');
+
+$filterByName = 'Berlin';
+print_r(array_filter($ceu, function ($k) {
+    return $k == $GLOBALS['filterByName'];      // => variable scope: https://www.php.net/manual/en/language.variables.scope.php
+}));
+
+print('<br><br><hr>');
 ?>
